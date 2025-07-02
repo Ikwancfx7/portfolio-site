@@ -7,41 +7,44 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="font-sans antialiased">
-    <div class="bg-lime-700 w-full flex text-white flex-col items-center">
-        <h1 class="container mx-auto text-4xl md:text-5xl lg:text-6xl font-light flex items-center justify-center mt-5">PORTFOLIO</h1>
-    </div>
-    <div class="bg-lime-700 w-full text-white p-6 lg:py-10 lg:px-25 rounded-b-4xl">
-        <div class="container mx-auto font-light flex flex-row justify-between items-center">
-            <div>
-                <h1 class="text-2xl lg:text-5xl">IKWANDA CHAIRIL</h1>
-                <h1 class="text-2xl lg:text-5xl">FITROH</h1>
-                <h1 class="text-sm lg:text-xl mt-1 lg:mt-4 font-extralight">Front End Web Developer</h1>
+    <header>
+        <div class="bg-lime-50 w-full flex text-lime-950 flex-col items-center p-2">
+            <h1 class="container mx-auto text-xl md:text-2xl lg:text-3xl font-semibold flex items-center justify-center">PORTFOLIO</h1>
+        </div>
+        <div class="bg-lime-700 w-full text-white p-6 lg:py-10 lg:px-25 rounded-b-2xl">
+            <div class="container mx-auto font-light flex flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-2xl lg:text-4xl">IKWANDA CHAIRIL FITROH</h1>
+                    <h1 class="text-sm lg:text-xl mt-1 lg:mt-4 font-extralight">Front-End Web Developer</h1>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <div class="mt-25">
         <div class="container mx-auto bg-lime-700 shadow-2xl rounded-2xl p-10 text-lime-50 w-[80%] lg:w-[50%]">
-            <h1 class="text-3xl lg:text-4xl font-extralight">"Tentang Saya</h1>
-            <p class="text-sm mt-2 text-justify font-extralight">Lulusan Sarjana Teknik Telekomunikasi dengan keahlian kuat di bidang IT, khususnya dalam Jaringan Komputer 
-                dan Pemrograman Web (JavaScript, HTML, CSS). Memiliki ketertarikan yang besar pada Pengembangan Web Front-End, 
-                dengan perhatian terhadap detail dan pengalaman pengguna. Terampil dalam entri data dan pemrosesan data, 
-                dengan rekam jejak dalam meningkatkan efisiensi alur kerja. Seorang pemain tim yang andal dengan keterampilan 
-                komunikasi yang baik, serta berdedikasi untuk memberikan kontribusi bermakna bagi kesuksesan organisasi.
-            </p>
+            <h1 class="text-2xl lg:text-3xl font-extralight">"Tentang Saya</h1>
+            <div class="text-sm mt-2 text-justify font-extralight">
+                <p>
+                    Seorang Front-End Web Developer dengan pengalaman dalam pengembangan antarmuka menggunakan React.js, HTML, dan Tailwind CSS. Memiliki ketertarikan besar pada pengembangan web yang responsif, efisien, dan berfokus pada pengalaman pengguna (user experience).
+                </p>
+                <p>
+                    Terampil dalam pemrosesan dan entri data, dengan rekam jejak dalam meningkatkan efisiensi alur kerja. Seorang team player yang andal dengan kemampuan komunikasi yang baik, serta berdedikasi untuk memberikan kontribusi bermakna bagi tim dan organisasi.
+                </p>
+            </div>
         </div>
     </div>
 
     <section class="mt-25">
         <div class="container mx-auto flex flex-col justify-center items-center text-lime-950">
-            <h1 class="text-2xl lg:text-4xl mb-10 font-bold">Pengalaman</h1>
+            <h1 class="text-2xl lg:text-4xl mb-10 font-bold">Pendidikan</h1>
             <div class="w-[90%] lg:w-[85%] flex flex-col gap-4">
                 <div class="bg-lime-100 rounded-lg shadow-lg">
                     <div class="flex flex-row justify-start items-center px-3 py-2 gap-3 lg:py-4 lg:gap-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
                             <path fill="#0a6f00" fill-rule="evenodd" d="m8 1.958l6.5 2.709V9.5h-1V5.809l-.5.25v5.799l-.338.115l-.162-.473l.162.473l-.003.001l-.007.002l-.026.01l-.098.032a31 31 0 0 1-1.557.465c-.928.25-2.11.517-2.97.517s-2.044-.268-2.971-.517a31 31 0 0 1-1.656-.498l-.026-.009l-.007-.002H3.34l.16-.474l-.16.473l-.34-.116V6.06L.8 4.96zM4 6.56v4.579a29 29 0 0 0 1.29.38c.929.25 1.996.482 2.71.482s1.781-.232 2.71-.483a30 30 0 0 0 1.29-.38V6.56l-4 2z" clip-rule="evenodd" />
                         </svg>
-                        <h1 class="text-lg lg:text-2xl font-bold">Pendidikan</h1>
+                        <h1 class="text-lg lg:text-2xl font-bold">Pendidikan Formal</h1>
                     </div>
                     <div class="flex flex-col pb-4">
                         <div class="grid grid-cols-2 pt-3 pb-1 px-7 md:px-15 lg:px-16">
@@ -103,20 +106,41 @@
 
     <section class="mt-25 bg-lime-700 p-10">
         <div class="flex flex-col justify-center items-center">
-            <div class="">
+            <div class="pb-6">
                 <h1 class="text-2xl lg:text-4xl font-bold text-lime-50">Project</h1>
             </div>
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 bg-lime-50 shadow-2xl rounded-2xl p-8 text-lime-950 w-[90%] lg:w-[50%] mt-6">
-                <div class="flex justify-center lg:bg-gray-200 rounded-2xl">
-                    <img class="w-[90%] object-contain" src="./images/Web-Ikwan-resto.png" alt="deskripsi-gambar">
+            <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-stretch gap-10 p-4">
+                <div class="project-card">
+                    <div class="flex justify-center lg:bg-gray-200 rounded-2xl">
+                        <img class="w-[90%] object-contain" src="./images/Wisataloka.png" alt="deskripsi-gambar">
+                    </div>
+                    <div class="flex flex-col p-1 pr-3 text-justify justify-center lg:p-8">
+                        <h1 class="text-sm font-bold mb-1">Wisataloka</h1>
+                        <p class="text-xs font-extralight">
+                            Website pemesanan tiket wisata berbasis React dengan fitur keranjang, kode promo, checkout, upload bukti pembayaran, dan dashboard admin untuk manajemen konten.
+                        </p>
+                        <p class="text-xs font-extralight">
+                            Teknologi yang digunakan: React JS, Vite, Tailwind CSS, Axios, React Router DOM.
+                        </p>
+                        <div class="bg-lime-600 hover:bg-lime-700 p-1 mt-3 lg:mt-8 rounded-xl cursor-pointer">
+                            <a class="flex items-center justify-center text-xs text-lime-50" href="https://wisataloka-travel-app.vercel.app/">Lihat Project Saya</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col p-1 pr-3 text-justify justify-center lg:p-8">
-                    <h1 class="text-sm font-bold mb-1">Website Ikwan Resto</h1>
-                    <p class="text-xs font-extralight">Saya membuat website yang resposif dan profesional untuk restoran, dengan fokus pada visual yang simpel dan elegan serta
-                        menarik pengunjung.
-                    </p>
-                    <div class="bg-lime-600 hover:bg-lime-700 p-1 mt-3 lg:mt-8 text-center rounded-xl">
-                        <a class="text-xs text-lime-50" href="https://ikwancfx7.github.io/miniproject1-resto">Lihat Project Saya</a>
+                <div class="project-card">
+                    <div class="flex justify-center lg:bg-gray-200 rounded-2xl">
+                        <img class="w-[90%] object-contain" src="./images/Web-Ikwan-resto.png" alt="deskripsi-gambar">
+                    </div>
+                    <div class="flex flex-col p-1 pr-3 text-justify justify-center lg:p-8">
+                        <h1 class="text-sm font-bold mb-1">Website Resto</h1>
+                        <p class="text-xs font-extralight">Saya membuat website yang resposif dan profesional untuk restoran, dengan fokus pada visual yang simpel dan elegan serta
+                            menarik pengunjung.
+                        </p>
+                        <div class="bg-lime-600 hover:bg-lime-700 p-1 mt-3 lg:mt-8 rounded-xl cursor-pointer">
+                            <a class="flex items-center justify-center text-xs text-lime-50" href="https://ikwancfx7.github.io/miniproject1-resto">
+                                Lihat Project Saya
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,26 +192,35 @@
     <footer class="bg-lime-700 mt-25">
         <div class="container mx-auto flex flex-row justify-evenly items-start text-lime-50 py-5">
             <h1 class="text-sm md:text-xl mb-1">Ikwanda Chairil Fitroh</h1>
+
             <div class="flex flex-col justify-center items-center">
                 <h1 class="text-sm lg:text-xl mb-1">Sosial Media</h1>
-                <div class="flex gap-2 lg:gap-5">
-                    <a href="https://www.instagram.com/chairill_inst/">
-                        <i style="font-size:18px" class="fa">&#xf16d;</i>
+                <div class="flex flex-row items-start gap-4">
+                    <a href="https://github.com/Ikwancfx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i data-lucide="github" class="w-5 h-5 text-lime-50 hover:text-white stroke-[1.5]"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ikwanda-chairil-fitroh-73158412a">
-                        <i style="font-size:18px" class="fa">&#xf08c;</i>
+                    <a href="http://linkedin.com/in/ikwanda-chairil-fitroh-73158412a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-lime-50 hover:text-white stroke-[1.5]"></i>
                     </a>
-                    <a href="https://www.facebook.com/ikwanda.fitroh/">
-                        <i style="font-size:18px" class="fa">&#xf09a;</i>
+                    <a href="https://www.instagram.com/chairill_inst" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i data-lucide="instagram" class="w-4 h-4 text-lime-50 hover:text-white stroke-[1.5]"></i>
                     </a>
                 </div>
+
             </div>
+
             <div>
                 <h1 class="text-sm lg:text-xl mb-1">Kontak</h1>
-                <p class="text-xs lg:text-lg">ikwanda@gmail.com</p>
-                <p class="text-xs lg:text-lg">0822456372890</p>
+                <p class="text-xs lg:text-lg">ikwandachairilf@gmail.com</p>
+                <p class="text-xs lg:text-lg">082226553793</p>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
 </body>
 </html>
