@@ -7,25 +7,39 @@
     <link rel="icon" href="./Icons/profile-picture-ikwanda.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="font-sans antialiased">
-    <header>
-        <div class="bg-lime-50 w-full flex text-lime-950 flex-col items-center p-2">
-            <h1 class="container mx-auto text-xl md:text-2xl lg:text-3xl font-semibold flex items-center justify-center">PORTFOLIO</h1>
+<body class="font-sans antialiased scroll-smooth">
+    <header id="home" class="bg-white">
+        <div class="fixed bg-lime-600 w-full px-7 md:px-15 lg:px-20 py-3">
+            <div class="max-w-screen-2xl mx-auto flex flex-row justify-between items-center">
+                <h1 class="text-xl md:text-2xl lg:text-3xl text-lime-50 font-bold flex items-center justify-center">Ikwanda</h1>
+                <div class="hidden md:flex flex-row justify-center gap-7 text-lime-50 w-100">
+                    <a href="#home" class="buton-navbar">About Me</a>
+                    <a href="#education" class="buton-navbar">Education</a>
+                    <a href="#projects" class="buton-navbar">Projects</a>
+                    <a href="#skills" class="buton-navbar">Skills</a>
+                </div>
+                <a  
+                    href="https://wa.me/6282226553793"
+                    class="text-sm md:text-lg text-white font-semibold border border-lime-50 hover:bg-lime-500 px-5 py-1 rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
+                >
+                    Contact
+                </a>
+            </div>
         </div>
-        <div class="bg-lime-700 w-full text-white p-6 lg:py-10 lg:px-25 rounded-b-2xl">
-            <div class="container mx-auto font-light flex flex-row justify-between items-center">
-                <div>
-                    <h1 class="text-2xl lg:text-4xl">IKWANDA CHAIRIL FITROH</h1>
-                    <h1 class="text-sm lg:text-xl mt-1 lg:mt-4 font-extralight">Front-End Web Developer</h1>
+        <div class="bg-white w-full text-black pt-18 pb-7 md:pt-20 lg:pt-25 px-7 md:px-15 lg:px-20 rounded-b-3xl">
+            <div class="font-light flex flex-row justify-between items-center">
+                <div class="flex flex-col gap-4 bg-white p-2">
+                    <h1 class="text-2xl lg:text-4xl font-semibold">Ikwanda Chairil Fitroh</h1>
+                    <h1 class="text-xl lg:text-3xl font-extralight">Front-End Web Developer</h1>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class="mt-25">
-        <div class="container mx-auto bg-lime-700 shadow-2xl rounded-2xl p-10 text-lime-50 w-[80%] lg:w-[50%]">
-            <h1 class="text-2xl lg:text-3xl font-extralight">"Tentang Saya</h1>
-            <div class="text-sm mt-2 text-justify font-extralight">
+    <!-- tentang saya -->
+    <div class="mt-10">
+        <div class="container mx-auto bg-lime-50 shadow-xl/50 hover:shadow-xl/60 shadow-lime-400 p-10 text-lime-950 w-[80%] lg:w-[60%]">
+            <h1 class="text-2xl lg:text-3xl font-extralight">"About Me</h1>
+            <div class="text-sm lg:text-lg mt-2 text-justify font-extralight">
                 <p>
                     Seorang Front-End Web Developer dengan pengalaman dalam pengembangan antarmuka menggunakan React.js, HTML, dan Tailwind CSS. Memiliki ketertarikan besar pada pengembangan web yang responsif, efisien, dan berfokus pada pengalaman pengguna (user experience).
                 </p>
@@ -35,10 +49,10 @@
             </div>
         </div>
     </div>
-
-    <section class="mt-25">
+    <!-- pendidikan -->
+    <section id="education" class="scroll-mt-24 mt-25">
         <div class="container mx-auto flex flex-col justify-center items-center text-lime-950">
-            <h1 class="text-2xl lg:text-4xl mb-10 font-bold">Pendidikan</h1>
+            <h1 class="text-2xl lg:text-4xl mb-10 font-bold">Education</h1>
             <div class="w-[90%] lg:w-[85%] flex flex-col gap-4">
                 <div class="bg-lime-100 rounded-lg shadow-lg">
                     <div class="flex flex-row justify-start items-center px-3 py-2 gap-3 lg:py-4 lg:gap-5">
@@ -104,11 +118,11 @@
             </div>
         </div>
     </section>
-
-    <section class="mt-25 bg-lime-700 p-10">
+    <!-- project -->
+    <section id="projects" class="scroll-mt-24 mt-25 bg-lime-700 p-10">
         <div class="flex flex-col justify-center items-center">
             <div class="pb-6">
-                <h1 class="text-2xl lg:text-4xl font-bold text-lime-50">Project</h1>
+                <h1 class="text-2xl lg:text-4xl font-bold text-lime-50">Projects</h1>
             </div>
             <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-stretch gap-10 p-4">
                 <div class="project-card">
@@ -147,10 +161,10 @@
             </div>
         </div>
     </section>
-
-    <section class="mt-25">
+    <!-- Skills -->
+    <section id="skills" class="scroll-mt-24 mt-25">
         <div class="container mx-auto flex flex-col justify-center items-center text-lime-950">
-            <h1 class="text-2xl lg:text-4xl mb-5 font-bold">Ketrampilan</h1>
+            <h1 class="text-2xl lg:text-4xl mb-5 font-bold">Skills</h1>
             <div class="w-[90%] lg:w-[85%] flex flex-col gap-4">
                 <div class="rounded-xl shadow-xl bg-lime-100 grid grid-cols-3 py-5 px-7">
                     <div >
