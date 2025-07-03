@@ -3,3 +3,6 @@
 .project-card{
     @apply grid grid-cols-1 lg:grid-cols-2 gap-2 bg-lime-50 shadow-2xl rounded-2xl p-8 text-lime-950 w-[90%] lg:w-[50%]
 }
+.buton-navbar{
+    @apply hover:font-semibold w-100/4 text-center
+}
